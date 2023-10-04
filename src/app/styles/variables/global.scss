@@ -1,0 +1,9 @@
+:root {
+    --bg-color: rgba(17, 17, 17, 0.87);
+    --border-radius-base: 20px;
+
+    iframe#webpack-dev-server-client-overlay {
+        display: none !important
+    }
+
+}

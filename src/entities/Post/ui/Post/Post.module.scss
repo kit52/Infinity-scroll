@@ -1,0 +1,27 @@
+.post {
+    &__title {
+        font-size: 26px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        max-height: calc(1.2em * 5);
+        /* Высота пяти строк */
+        overflow: hidden;
+        position: relative;
+
+        &.collapsed {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            /* Максимальное количество строк */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* Добавляем троеточие для обрезанных строк */
+        }
+    }
+
+    a {
+        color: burlywood
+    }
+}

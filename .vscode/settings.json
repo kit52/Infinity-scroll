@@ -1,0 +1,22 @@
+{
+    "stylelint.enable": true,
+    "css.validate": true,
+    "scss.validate": true,
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+    "cSpell.words": [
+        "reduxjs",
+        "svgr"
+    ],
+    "vue.features.codeActions.enable": false,
+    "AllAutocomplete.dontContributeToSelf": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "i18n-ally.localesPaths": [
+        "public/locales",
+        "src/shared/config/i18n"
+    ],
+    "i18next.i18nPaths": "c:/Users/lesha/Desktop/course/public/locales,c:/Users/lesha/Desktop/course/src/shared/config/i18n",
+}
