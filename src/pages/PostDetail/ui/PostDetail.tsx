@@ -8,8 +8,11 @@ import { IPost } from '../../../entities/Post/model/types/post';
 import { BackLink } from 'shared/ui/BackLink/BackLink';
 
 const PostDetail = () => {
-  const { id } = useParams();
-  const { data: post, isLoading, isError } = useGetPostQuery('1');
+  const { id } = useParams<{ id: string }>();
+  if (!id) {
+    return <div>Error loading posts</div>;
+  }
+  const { data: post, isLoading, isError } = useGetPostQuery(id);
 
   if (isLoading) {
     return (
